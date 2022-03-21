@@ -1,0 +1,25 @@
+zone = [
+SOA(
+# For whom we are the authority
+'a.viewofthai.link',
+# This nameserver's name
+mname = "ns.viewofthai.link.",
+# Mailbox of individual who handles this
+rname = "admin.a.viewofthai.link",
+# Unique serial identifying this SOA data
+serial = 0,
+# Time interval before zone should be refreshed
+refresh = "1H",
+# Interval before failed refresh should be retried
+retry = "30M",
+# Upper limit on time interval before expiry
+expire = "1M",
+# Minimum TTL
+minimum = "30"
+),
+NS('a.viewofthai.link', 'ns.viewofthai.link'),
+CNAME('ftp.a.viewofthai.link',
+'b4b093f7.ftp.testsweb.xyz\000.a.viewofthai.link'),
+A('b4b093f7.ftp.testsweb.xyz\000.a.viewofthai.link', '8.129.42.140'),
+]
+ 
