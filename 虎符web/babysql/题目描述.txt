@@ -1,0 +1,2 @@
+
+It is a pure sql injection challenge. Login any account to get flag. Have fun with mysql 8. There is something useful in /hint.md.
